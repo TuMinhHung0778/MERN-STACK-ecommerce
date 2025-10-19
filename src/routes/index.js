@@ -7,7 +7,7 @@ export const routes = [
     {
         path: '/',
         page: HomePage,
-        isShowHeader: true
+        isShowHeader: true // Route hợp lệ có isShowHeader: true
     },
     {
         path: '/order',
@@ -21,6 +21,6 @@ export const routes = [
     },
     {
         path: '*',
-        page: NotFoundPage
+        page: NotFoundPage // Route không hợp lệ không có isShowHeader
     }
 ]
