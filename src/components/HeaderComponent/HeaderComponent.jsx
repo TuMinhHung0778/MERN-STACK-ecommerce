@@ -6,31 +6,36 @@ import {
   WrapperTextHeader,
   WrapperTextHeaderSmall,
 } from "./style";
-import Search from "antd/es/transfer/search";
 import {
   CaretDownOutlined,
   ShoppingCartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 
 const HeaderComponent = () => {
   return (
     <div>
       <WrapperHeader gutter={16}>
-        {/* tên của web */}
+        {/* title of web */}
         <Col span={6}>
           <WrapperTextHeader>HUNGIT-9135</WrapperTextHeader>
         </Col>
         {/* phần input thanh tìm kiếm */}
         <Col span={12}>
-          <Search
+          <ButtonInputSearch
+            size="large"
+            bordered={false}
+            textButton="Tìm kiếm"
             placeholder="input search text"
-            enterButton
             // onSearch={onSearch}
           />
         </Col>
         {/* phần đăng ký/đăng nhập,tài khoản */}
-        <Col span={6} style={{ display: "flex", gap: "20px" }}>
+        <Col
+          span={6}
+          style={{ display: "flex", gap: "20px", alignItems: "center" }}
+        >
           <WrapperHeaderAccout>
             <UserOutlined style={{ fontSize: "30px" }} />
             <div>
