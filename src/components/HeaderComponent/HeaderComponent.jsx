@@ -16,7 +16,7 @@ import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 const HeaderComponent = () => {
   return (
     <div>
-      <WrapperHeader gutter={16}>
+      <WrapperHeader>
         {/* title of web */}
         <Col span={6}>
           <WrapperTextHeader>HUNGIT-9135</WrapperTextHeader>
